@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="min-h-screen bg-[url('white.jpg')] bg-cover bg-center bg-no-repeat flex flex-col">
+
+    <div class="flex items-center justify-between bg-yellow-500 rounded-2xl shadow-xl ">
+    <h1 class="text-5xl font-extrabold text-center text-gray-900 p-14">
+      M Faisal Sadli!
+    </h1>
+    <ul class="flex p-4 text-5xl font-bold text-center text-gray-900">
+        <li><a href="#about" class="px-8 hover:text-white">about</a></li>
+        <li><a href="#portofolio" class="px-8 hover:text-white">portofolio</a></li>
+        <li><a href="" class="px-8 hover:text-white">Contact</a></li>
+        
+    </ul>
+    </div>
+
+   
+
+    <main class="flex-grow flex justify-center items-center">
+    <section class=" w-full py-16 flex flex-col gap-10 ">
+
+      <h1 class="text-4xl font-bold text-gray-600 text-center">SELAMAT DATANG DI WEBSITE SAYA!</h1>
+      <div class="px-6 lg:px-20 xl:px-32">
+        <div class="max-w-7xl mx-auto border-4 border-yellow-600/50 rounded-3xl p-10 mt-6 ">
+          <div class="flex flex-col md:flex-row gap-16 justify-center items-center">
+        <div id="about" class="bg-yellow-400 p-8 w-[356px] h-[360px] shadow-xl cursor-pointer hover:bg-yellow-600/50 hover:ring-2 hover:ring-yellow-400 flex justify-center items-center ">
+            <h3 class="cursor-pointer text-7xl font-extrabold  text-white">ABOUT</h3>
+        </div>
+
+        <div id="portofolio" class="bg-yellow-400 p-8 w-[356px] h-[360px] shadow-xl cursor-pointer hover:bg-yellow-600/50 hover:ring-2 hover:ring-yellow-400 flex justify-center items-center ">
+            <h3 class="cursor-pointer text-5xl font-extrabold text-white  ">PORTOFOLIO</h3>
+        </div>
+
+        <div id="contact" class="bg-yellow-400 p-8 w-[356px] h-[360px] shadow-xl cursor-pointer hover:bg-yellow-600/50 hover:ring-2 hover:ring-yellow-400 flex justify-center items-center ">
+            <h3 class="cursor-pointer text-7xl font-extrabold text-white">CONTACT</h3>
+        </div>
+        </div>
+      </div>
+      </div>
+
+    </section>
+    </main>
+
+    
+
+    <footer class="flex justify-center items-center box-content py-6 w-full rounded-xl shadow-xl bg-yellow-500 ">
+     <p class="font-semibold text-3xl ">&copy M Faisal Sadli</p></footer>
+
+     <script src="connection.js"></script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>M FAISAL SADLI | CONTACT</title>
+</head>
+<body class="bg-[url('yellow.jpg')] bg-cover bg-center bg-no-repeat min-h-screen flex flex-col">
+
+    <header class="bg-yellow-400 p-8 flex justify-center items-center ">
+        <h1 class="text-white font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">CONTACT | M FAISAL SADLI</h1>
+    </header>
+
+
+    <main class="flex flex-grow py-16  justify-center items-center ">
+        <section class="flex flex-col gap-10 items-center">
+
+            <h1 class="text-4xl text-red-800 font-bold">CONTACT ME!</h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <div onclick="toggleWA(this)" class="bg-yellow-400 p-8 w-[360px] h-[360px] rounded-xl shadow-xl hover:bg-yellow-400/50 hover:ring-4 hover:ring-white/50 cursor-pointer hover:text-green-800 duration-500 transition text-white flex flex-col justify-center items-center gap-3">
+                <div class="wa-icon flex flex-col gap-4 items-center ">
+                <i class="fa-brands fa-whatsapp text-[120px] "></i>
+                <h1 class="text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-center p-8 font-bold ">WHATSAPP</h1>
+                </div>
+
+                <!-- info -->
+                 <div class="wa-info hidden  flex-col items-center gap-6  text-center justify-center hover:text-green-800 duration-500 transition">
+                    <i class="fa-solid fa-phone text-8xl "></i>
+                    <p class="text-4xl font-bold "><a href="https://wa.me/6281523601999" target="_blank" class="underline" rel="noopener noreferrer">0815-2360-1999</a></p>
+                    
+                 </div>
+            </div>
+
+             <div onclick="toggleIg(this)" class="bg-yellow-400 p-8 w-[360px] h-[360px] rounded-xl shadow-xl hover:bg-yellow-400/50 hover:ring-4 hover:ring-white/50 cursor-pointer flex flex-col justify-center text-center text-white hover:text-pink-500 transition duration-500">
+                <div class="ig-icon  flex-col gap-4 items-center ">
+                <i class="fa-brands fa-instagram text-[120px] "></i>
+                <h1 class="text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-center p-8 font-bold ">INSTAGRAM</h1>
+                </div>
+
+                <!-- info -->
+                 <div class="ig-info hidden flex-col items-center gap-4 text-center">
+                    <i class="fa-brands fa-instagram text-9xl "></i>
+                    <p class="text-5xl font-bold underline  gap-6"><a href="https://instagram.com/mfaisalsadli" target="_blank rel="noopener noreferrer"">@mfaisalsadli</a></p>
+                 </div>
+            </div>
+
+             <div onclick="toggleGithub(this)" class="bg-yellow-400 p-8 w-[360px] h-[360px] rounded-xl shadow-xl hover:bg-yellow-400/50 hover:ring-4 hover:ring-white/50 cursor-pointer flex flex-col justify-center items-center text-white hover:text-gray-900 transition duration-500">
+                <div class="github-icon flex flex-col gap-4 items-center ">
+                <i class="fa-brands fa-github text-[120px] "></i>
+                <h1 class="text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-center p-8 font-bold">GITHUB</h1>
+                </div>
+
+                <!-- info -->
+
+                <div class="github-info hidden  flex-col text-center gap-4 items-center">
+                    <i class="fa-brands fa-github text-9xl  "></i>
+                    <p class="text-5xl font-bold underline gap-3 "><a href="https://github.com/franken25" target="_blank" rel="noopener noreferrer">franken25</a></p>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+  
+<script>
+    function toggleWA(card) {
+        card.querySelector('.wa-icon').classList.toggle('hidden');
+        card.querySelector('.wa-info').classList.toggle('hidden');
+       
+    };
+
+    function toggleIg(card){
+        card.querySelector('.ig-icon').classList.toggle('hidden');
+        card.querySelector('.ig-info').classList.toggle('hidden');
+    }
+
+    function toggleGithub(card){
+        card.querySelector('.github-icon').classList.toggle('hidden');
+        card.querySelector('.github-info').classList.toggle('hidden');
+    }
+</script>
+
+<script src="connection.js"></script>
+
+ <div class="flex justify-center items-center p-8">
+        <button onclick="goBack( )" class="bg-yellow-400/50 hover:bg-white/50 hover:text-yellow-400 px-6 py-3 rounded-2xl text-5xl mb-5 ">⬅️Kembali</button>
+    </div>
+   
+    <footer class="flex justify-center items-center py-6 w-full rounded-xl shadow-xl bg-yellow-500 ">
+     <p class="font-semibold text-2xl ">&copy M Faisal Sadli</p></footer> 
+    
+</body>
+</html>
